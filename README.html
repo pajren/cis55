@@ -5,13 +5,63 @@
 </head>
 
 
-SSNRe =/^[0-9]{4} [\- ]?[0-9]{4}[\- ]?[0-9]{4}$/
 <body>
 <h2> Cards  </h2>
 <div id="errors"></div>
 
+<script type="text/javascript"> 
+var SSNRe =/^[0-9]{4} [\- ]?[0-9]{4}[\- ]?[0-9]{4}$/;
+
+function checkLeapYear() {
 
 
+}
+</script>
+
+<form id="mailing_form" action="foobar.php" onsubmit="return checkForm()"> 
+
+
+<label for="Credit1"></label>
+<input type="text" id="Credit2">
+
+<p>Year: <input type="text" id="year" /><br />
+<input type="button" value="Check for Leap Year" onclick="checkLeapYear();" /></p>
+
+</form>
+
+<H1>Assignment</H1>
+Thursday, Assignment - due Thursday midnight:  
+
+Use your imagination to create a web page that contains these four fields - -- anything more will be too much, especially if theres an error).:
+
+
+credit card number
+Credit card expiration date (use drop downs for month, day, and year)
+Security code (allow either 3 or 4 digits, but no more!)
+Error message box (see below)
+Submit button
+When submit button is clicked, validate these form fields. If all are OK, display an alert box stating that! If any are in error, use a label/innerHTML to place a message on the field in error on the web page itself.
+
+
+Use one span tag for all error messages. Display the messages at the top of the page. 
+
+Use the this.form technique we learned in week 2 to pass the form to the validation function. 
+
+Do cross validation edits (make sure the month/day/year are all selected, and that they make sense - anotherwords, June 31 is not valid). 
+
+Use a regular expression to validate the credit card number and security code
+
+Assume the credit card number will be 16 digits, separated by dashes, as in nnnn-nnnn-nnnn-nnnn. Do NOT  use a regular expression to check for a valid card number, just a valid pattern, as shown above. Its too easy to copy these from the internet, so I am looking for this simpler edit, so that I know you wrote it yourself. 
+
+Anything that appears to "internet-tie" (i.e. acquired from a website - I WILL KNOW) will be kicked back to you.
+
+
+NOTE:  TEST ALL YOUR LINKS FROM YOUR HOME PAGE:
+Create links on your home page to the coding assignment
+FTP all content to your web server
+Open a browser and go to your home page on the webserver. You should see your links.
+Click each link to be sure your page works on the server.
+If the links  do not work for you,  they will not work for me! 
 </body>
 
 
